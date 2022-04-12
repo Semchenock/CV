@@ -12,76 +12,136 @@
       name="description"
       content="This is my first page. Here you can find my CV."
     />
+    <link rel="stylesheet" href="selector.css" />
     <title>Semchenock Vsevolod</title>
   </head>
   <body>
-    <img src="My photo.png" alt="My photo" width="300" />
-    <h1><strong>Semchenock Vsevolod</strong></h1>
-    <p>
-      I am a 3rd year student of <strong>Bauman State University</strong> in the
-      direction of "Robotics and complex automation"
-    </p>
-    <p>
-      <em>I like programming, cooking, playing board and computer games.</em>
-    </p>
-    <h2><strong>My hobbies:</strong></h2>
-    <ol>
-      <li>Programming</li>
-      <li>Cooking</li>
-      <li>Gaming</li>
-    </ol>
-    <h2><strong>Work experienc:</strong></h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Company</th>
-          <th>Post</th>
-          <th>Date</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>CIMA RUS</th>
-          <th>Intern</th>
-          <th>-</th>
-        </tr>
-        <tr>
-          <th>Avtoelectronika</th>
-          <th>Intern</th>
-          <th>-</th>
-        </tr>
-        <tr>
-          <th>ShLZ</th>
-          <th>Intern</th>
-          <th>05.07.2021 - 30.07.2021</th>
-        </tr>
-      </tbody>
-    </table>
-    <h2>Send me a message</h2>
-    <form>
-      <div>
-        <label for="text">Your name: </label>
-        <input type="text" id="text" placeholder="Enter your name" />
+    <div class="container">
+      <div class="card">
+        <div class="info">
+          <div>
+            <img
+              class="myPhoto"
+              src="My photo.png"
+              alt="My photo"
+              width="300"
+            />
+            <div class="social">
+              <a
+                href="https://github.com/Semchenock"
+                target="_blank"
+                class="GitHub"
+              >
+              </a>
+              <a href="https://vk.com/yazikmurlokov" target="_blank" class="VK">
+              </a>
+              <a
+                href="https://t.me/So1iD_lIlI"
+                target="_blank"
+                class="Telegram"
+              ></a>
+            </div>
+          </div>
+          <div class="infoText">
+            <h1 style="padding-bottom: 10px">
+              <strong>Semchenock Vsevolod </strong>
+            </h1>
+            <p style="padding-bottom: 5px">
+              I am a 3rd year student of
+              <strong>Bauman State University</strong> in the direction of
+              "Robotics and complex automation"
+            </p>
+            <p>
+              <em
+                >I like programming, cooking, playing board and computer
+                games.</em
+              >
+            </p>
+          </div>
+        </div>
       </div>
-      <div>
-        <label for="email">Your email: </label>
-        <input type="email" id="email" placeholder="Enter your email" />
+      <div class="card">
+        <h2><strong>My hobbies:</strong></h2>
+        <ol style="padding: 10px; padding-left: 40px">
+          <li>Programming</li>
+          <li>Cooking</li>
+          <li>Gaming</li>
+          <li>Yachting</li>
+        </ol>
       </div>
-      <div>
-        <label for="email">Your message: </label>
-        <br />
-        <textarea
-          id="message"
-          cols="30"
-          rows="5"
-          placeholder="Enter your message"
-        ></textarea>
+      <div class="card">
+        <h2><strong>Work experience:</strong></h2>
+        <table style="padding: 10px 50px">
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Post</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>CIMA RUS</th>
+              <th>Intern</th>
+              <th>-</th>
+            </tr>
+            <tr>
+              <th>Avtoelectronika</th>
+              <th>Intern</th>
+              <th>-</th>
+            </tr>
+            <tr>
+              <th>ShLZ</th>
+              <th>Intern</th>
+              <th>05.07.2021 - 30.07.2021</th>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div><input type="submit" value="Send" /></div>
-    </form>
-    <h2><strong>My contacts:</strong></h2>
-    <a href="https://vk.com/yazikmurlokov" target="_blank">VK</a> |
-    <a href="https://github.com/Semchenock" target="_blank">GitHub</a> |
-    <a href="https://t.me/So1iD_lIlI" target="_blank">Telegram</a>
+      <div class="card" style="position: relative">
+        <h2>Send me a message</h2>
+        <form>
+          <div class="nameAndEmail">
+            <label for="text">Your name: </label>
+            <br />
+            <input
+              class="field"
+              type="text"
+              id="text"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="nameAndEmail">
+            <label for="email">Your email: </label>
+            <br />
+            <input
+              class="field"
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <hr color="#ecf0f1" />
+          <br />
+          <div class="senderEmail">
+            <label for="massage">Your message: </label>
+            <br />
+            <textarea
+              class="field"
+              id="message"
+              cols="70"
+              rows="3"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+          <hr color="#ecf0f1" />
+          <br />
+          <div><input class="btn send" type="submit" value="Send" /></div>
+          <br />
+          <br />
+          <br />
+        </form>
+      </div>
+    </div>
   </body>
 </html>

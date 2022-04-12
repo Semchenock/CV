@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #ecf0f1;
+  background: #2c3e50;
+}
+.card {
+  padding: 30px;
+  background-color: #34495e;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.container {
+  width: 60vw;
+  min-width: 650px;
+  max-width: 820px;
+  margin: auto;
+}
+.myPhoto {
+  width: 200px;
+  border-radius: 15%;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: 10px;
+}
+.btn {
+  padding: 10px;
+  background: #ecf0f1;
+  color: #34495e;
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn:active {
+  background: #34495e;
+}
+.btn:visited {
+  font-style: italic;
+}
+a {
+  padding: 20px 30px;
+  background: transparent;
+  cursor: pointer;
+}
+a:hover {
+  opacity: 0.8;
+}
+a:active {
+  background: #34495e;
+}
+a:visited {
+  font-style: italic;
+}
+.nameAndEmail {
+  width: 49%;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+.field {
+  background: transparent;
+  border: none;
+  color: #ecf0f1;
+  outline: none;
+}
+::placeholder {
+  color: #ecf0f1;
+  font-family: "Roboto";
+  font-size: 1.1em;
+}
+.senderEmail {
+  width: 49%;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+.senderEmail textarea {
+  padding: 10px 0;
+}
+.send {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  border: none;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+.info {
+  display: flex;
+}
+.infoText {
+  margin-left: 20px;
+  margin-top: 80px;
+}
+.VK {
+  background: transparent;
+  background-image: url("icons8-vk-com-60.png");
+  color: transparent;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.GitHub {
+  background: transparent;
+  background-image: url("icons8-github-60.png");
+  margin-left: 10px;
+}
+.Telegram {
+  background: transparent;
+  background-image: url("icons8-telegram-app-60.png");
+  margin-right: 10px;
+}
+.social {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
