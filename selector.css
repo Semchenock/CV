@@ -73,6 +73,8 @@ a:visited {
   border: none;
   color: #ecf0f1;
   outline: none;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 ::placeholder {
   color: #ecf0f1;
@@ -135,7 +137,7 @@ thead {
     text-align: center;
   }
   .container {
-    width: 98vw;
+    width: 100vw;
   }
   .myPhoto {
     margin: auto;
